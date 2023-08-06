@@ -1,0 +1,40 @@
+@use '/src/styles.scss' as global;
+
+.listing {
+    background: global.$accent-color;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+
+.listing-heading {
+    color: global.$primary-color;
+    padding: 10px 20px 0 20px;
+}
+
+.listing-photo {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.listing-location {
+    padding: 10px 20px 20px 20px;
+    ::before {
+        content: url("/src/assets/location-ping.svg");
+    }
+}
+
+section.listing {
+    a {
+        padding-left: 20px;
+        text-decoration: none;
+        color: global.$primary-color;
+
+        &::after {
+            content: "\203A";
+            margin-left: 5px;
+        }
+    }
+    
+}
