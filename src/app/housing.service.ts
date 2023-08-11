@@ -4,6 +4,7 @@ import { HousingLocation } from './housing-location/housinglocation';
 @Injectable({
   providedIn: 'root'
 })
+
 export class HousingService {
   readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
