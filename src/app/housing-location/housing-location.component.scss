@@ -20,8 +20,8 @@
 
 .listing-location {
     padding: 10px 20px 20px 20px;
-    ::before {
-        content: url("/src/assets/location-ping.svg");
+    &:before {
+        content: url("../../assets/location-ping.svg");
     }
 }
 
