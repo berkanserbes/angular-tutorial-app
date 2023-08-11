@@ -68,6 +68,10 @@ input {
     border-bottom: solid .3px;
 }
 
+button[type="submit"] {
+    cursor: pointer;
+}
+
 @media (max-width: 1024px) {
     .listing-photo {
         width: 100%;

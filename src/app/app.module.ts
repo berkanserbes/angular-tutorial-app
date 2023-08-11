@@ -7,6 +7,7 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
 import { DetailsComponent } from './details/details.component';
 import { provideRouter } from '@angular/router';
 import routeConfig from './routes';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import routeConfig from './routes';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [provideRouter(routeConfig)],
   bootstrap: [AppComponent]
